@@ -1,0 +1,37 @@
+{
+	"name": "json-client",
+	"version": "0.0.0",
+	"description": "Simple library for requesting data from JSON APIs",
+	"homepage": "https://github.com/cuvva/json-client",
+	"bugs": "https://github.com/cuvva/json-client/issues",
+
+	"license": "MIT",
+	"author": "James Billingham <james@jamesbillingham.com> (http://jamesbillingham.com)",
+
+	"main": "lib/index.js",
+
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/cuvva/json-client.git"
+	},
+
+	"dependencies": {
+		"object-merge": "^2.5.1",
+		"q": "^1.1.2"
+	},
+
+	"keywords": [
+		"json",
+		"client",
+		"rest",
+		"restful",
+		"api",
+		"http",
+		"https",
+		"request",
+		"simple",
+		"library",
+		"promise",
+		"q"
+	]
+}
