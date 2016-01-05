@@ -1,6 +1,6 @@
 {
 	"name": "json-client",
-	"version": "0.6.0",
+	"version": "0.7.0",
 	"description": "Simple library for requesting data from JSON APIs",
 	"homepage": "https://github.com/billinghamj/json-client",
 	"bugs": "https://github.com/billinghamj/json-client/issues",
@@ -17,7 +17,7 @@
 
 	"dependencies": {
 		"es6-promise": "^3.0.2",
-		"isomorphic-fetch": "^2.2.0",
+		"node-fetch": "^1.3.3",
 		"object-merge": "^2.5.1",
 		"qs": "^5.2.0",
 		"url": "^0.11.0"
