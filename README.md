@@ -48,24 +48,21 @@ With regards to specific environments, compatibility-wise:
 			<th>How to use</th>
 		</tr>
 	</thead>
-
 	<tbody>
 		<tr>
 			<td>Node JS</td>
 			<td>No</td>
-			<td>provide [`node-fetch`](https://npmjs.com/package/node-fetch) to `JsonClient.fetch`</td>
+			<td>use <a href="https://npmjs.com/package/json-client-node"><code>json-client-node</code></a></td>
 		</tr>
-
 		<tr>
 			<td>React Native</td>
 			<td>Yes</td>
-			<td>use `json-client` as-is</td>
+			<td>use <code>json-client</code> as-is</td>
 		</tr>
-
 		<tr>
 			<td>Browsers</td>
 			<td>Sometimes</td>
-			<td>polyfill with [GitHub's fetch](https://github.com/github/fetch)</td>
+			<td>polyfill with <a href="https://github.com/github/fetch">GitHub's fetch</a></td>
 		</tr>
 	</tbody>
 </table>
