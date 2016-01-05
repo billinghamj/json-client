@@ -22,24 +22,59 @@ $ npm install json-client
 ### Notes
 
 json client uses [`fetch`](https://fetch.spec.whatwg.org) to make requests
-internally. It attempts to find an implementation with the following process, in
-this order:
+internally. If a global called `fetch` is not defined, you can explicitly
+provide an implementation:
 
-0. look for a global called `fetch`
-0. attempt to require `node-fetch`
-0. fail with the error: "fetch implementation missing - see readme"
+```js
+var JsonClient = require('json-client');
 
-If you receive the error, you must provide an implementation on the global
-before json client is loaded. For example, in a browser environment, this can be
-achieved by including a fetch implementation `<script>` tag before including
-json client (e.g. [GitHub's](https://github.com/github/fetch) implementation or
-another polyfill).
+if (!JsonClient.fetch)
+	JsonClient.fetch = require('node-fetch');
 
-The current situation is fairly inflexible, but is driven by the need to support
-both React Native and Node JS without any additional effort. If you would like
-the behavior to change to work better for your use case, please
-[open an issue](https://github.com/billinghamj/json-client/issues/new) so we can
-discuss the possible options.
+var client = JsonClient('https://api.example.com/v1/');
+```
+
+Note - you must provide the implementation *before* creating a client. If an
+implementation is not available, JsonClient will throw an error:
+"JsonClient.fetch implementation missing - see readme".
+
+With regards to specific environments, compatibility-wise:
+
+<table>
+	<thead>
+		<tr>
+			<th>Environment</th>
+			<th>Native Fetch</th>
+			<th>How to use</th>
+		</tr>
+	</thead>
+
+	<tbody>
+		<tr>
+			<td>Node JS</td>
+			<td>No</td>
+			<td>provide [`node-fetch`](https://npmjs.com/package/node-fetch) to `JsonClient.fetch`</td>
+		</tr>
+
+		<tr>
+			<td>React Native</td>
+			<td>Yes</td>
+			<td>use `json-client` as-is</td>
+		</tr>
+
+		<tr>
+			<td>Browsers</td>
+			<td>Sometimes</td>
+			<td>polyfill with [GitHub's fetch](https://github.com/github/fetch)</td>
+		</tr>
+	</tbody>
+</table>
+
+Other environments are not currently supported, but I'm keen to include others.
+If you'd like to use json client with another environment, or it isn't working
+correctly in one of the ones above, please
+[open an issue](https://github.com/billinghamj/json-client/issues/new) and we'll
+figure it out.
 
 ## Support
 
