@@ -1,38 +1,34 @@
 {
-	"name": "json-client",
-	"version": "0.8.2",
-	"description": "Simple library for requesting data from JSON APIs",
-	"homepage": "https://github.com/billinghamj/json-client",
-	"bugs": "https://github.com/billinghamj/json-client/issues",
-
-	"license": "MIT",
-	"author": "James Billingham <james@jamesbillingham.com> (http://jamesbillingham.com)",
-
-	"main": "lib/index.js",
-
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/billinghamj/json-client.git"
-	},
-
-	"dependencies": {
-		"object-merge": "^2.5.1",
-		"qs": "^5.2.0",
-		"url": "^0.11.0"
-	},
-
-	"keywords": [
-		"json",
-		"client",
-		"rest",
-		"restful",
-		"api",
-		"http",
-		"https",
-		"request",
-		"simple",
-		"library",
-		"promise",
-		"fetch"
-	]
+  "name": "json-client",
+  "version": "0.8.3",
+  "description": "Simple library for requesting data from JSON APIs",
+  "homepage": "https://github.com/billinghamj/json-client",
+  "bugs": "https://github.com/billinghamj/json-client/issues",
+  "license": "MIT",
+  "author": "James Billingham <james@jamesbillingham.com> (http://jamesbillingham.com)",
+  "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/billinghamj/json-client.git"
+  },
+  "dependencies": {
+    "fetch-everywhere": "^1.0.2",
+    "object-merge": "^2.5.1",
+    "qs": "^5.2.0",
+    "url": "^0.11.0"
+  },
+  "keywords": [
+    "json",
+    "client",
+    "rest",
+    "restful",
+    "api",
+    "http",
+    "https",
+    "request",
+    "simple",
+    "library",
+    "promise",
+    "fetch"
+  ]
 }
