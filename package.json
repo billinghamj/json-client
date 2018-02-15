@@ -14,7 +14,7 @@
   "dependencies": {
     "fetch-everywhere": "^1.0.2",
     "object-merge": "^2.5.1",
-    "qs": "^5.2.0",
+    "qs": "^6.0.4",
     "url": "^0.11.0"
   },
   "keywords": [
