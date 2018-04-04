@@ -5,12 +5,10 @@ Simple library for requesting data from JSON APIs.
 Returns promises only. Standard callbacks are not supported.
 
 ```js
-var JsonClient = require('json-client');
-var client = JsonClient('https://api.example.com/v1/');
+var jsonClient = require('json-client');
+var client = jsonClient('https://api.example.com/v1/');
 
-client('get', 'users/123').then(function (user) {
-	console.log(user);
-});
+await client('get', 'users/123');
 ```
 
 ## Installation
