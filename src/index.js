@@ -105,4 +105,4 @@ function mergeOptions(baseOptions, newOptions) {
 	});
 }
 
-export default jsonClient;
+module.exports = jsonClient;
