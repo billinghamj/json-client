@@ -11,8 +11,6 @@ const defaultOptions = {
 	},
 };
 
-module.exports = jsonClient;
-
 function jsonClient(baseUrl, options) {
 	const resolvedBaseUrl = baseUrl.replace(/\/*$/, '/');
 	const baseOptions = mergeOptions(defaultOptions, options);
@@ -106,3 +104,5 @@ function mergeOptions(baseOptions, newOptions) {
 		headers: headers,
 	});
 }
+
+module.exports = jsonClient;
