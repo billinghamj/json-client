@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "es6-object-assign": "^1.1.0",
-    "fetch-ponyfill": "^6.0.2",
+    "fetch-ponyfill": "^7.0.0",
     "qs": "^6.5.2",
     "url": "^0.11.0"
   },
