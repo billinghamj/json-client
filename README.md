@@ -14,7 +14,7 @@ await client('get', 'users/123');
 ## Installation
 
 ```bash
-$ npm install json-client
+$ npm install @cuvva/json-client
 ```
 
 ### Notes
