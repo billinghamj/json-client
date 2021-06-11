@@ -1,15 +1,17 @@
 {
-  "name": "json-client",
+  "name": "@cuvva/json-client",
   "version": "0.9.3",
   "description": "Simple library for requesting data from JSON APIs",
-  "homepage": "https://github.com/billinghamj/json-client",
-  "bugs": "https://github.com/billinghamj/json-client/issues",
+  "homepage": "https://github.com/cuvva/json-client",
+  "bugs": {
+    "url": "https://github.com/cuvva/json-client/issues"
+  },
   "license": "MIT",
-  "author": "James Billingham <james@jamesbillingham.com> (http://jamesbillingham.com)",
+  "author": "original James Billingham <james@jamesbillingham.com> (http://jamesbillingham.com)",
   "main": "lib/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/billinghamj/json-client.git"
+    "url": "git+https://github.com/cuvva/json-client.git"
   },
   "dependencies": {
     "es6-object-assign": "^1.1.0",
@@ -30,5 +32,11 @@
     "library",
     "promise",
     "fetch"
-  ]
+  ],
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
 }
